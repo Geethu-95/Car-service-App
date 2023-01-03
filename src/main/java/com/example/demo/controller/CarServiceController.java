@@ -41,18 +41,18 @@ public class CarServiceController {
 		if(car=="hatchback") 
 		{
 		 ServiceValue = CarServiceRepository.findByServiceCode(serviceCode);
-		 return (service + " cost = " + ServiceValue);
+		 return (service + " cost = " + "Rs. " + ServiceValue);
 		 
 		}
 		else if (car=="sedan")
 		{
 			ServiceValue = CarServiceRepository.findByServiceCodeSedan(serviceCode);
-			 return (service + " cost = " + ServiceValue);
+			 return (service + " cost = " + "Rs. " + ServiceValue);
 		}
 		else if (car=="suv")
 		{
 			ServiceValue = CarServiceRepository.findByServiceCodeSuv(serviceCode);
-			 return (service + " cost = " + ServiceValue);
+			 return (service + " cost = " + "Rs. " + ServiceValue);
 		}
 		
 		else {
